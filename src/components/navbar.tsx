@@ -38,6 +38,9 @@ export default function () {
             <li>
               <a>API</a>
             </li>
+            <li>
+              <a>Contact</a>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">tejas kamtam</a>
@@ -54,8 +57,9 @@ export default function () {
           <li>
             <a>Experience</a>
           </li>
+          
           <li>
-            <a>API</a>
+            <a>Contact</a>
           </li>
         </ul>
         <a className="btn">résumé</a>
