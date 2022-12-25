@@ -1,4 +1,3 @@
-
 import Navbar from "../components/navbar";
 import Soon from "../components/soon";
 import "../styles/globals.css";
@@ -16,8 +15,9 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Soon />
         <Navbar />
+        <Soon />
+
         {children}
       </body>
     </html>

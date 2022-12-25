@@ -10,7 +10,7 @@ export default function Soon() {
       <div className="starts2" aria-hidden="true"></div>
       <div className="stars3" aria-hidden="true"></div>
       <main className="main">
-        <section className="contact">
+        <section className="contact mx-3">
           <h1 className="title">Coming Soon</h1>
           <h2 className="sub-title">Site Under Construction</h2>
         </section>

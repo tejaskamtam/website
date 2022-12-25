@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -39,8 +40,14 @@ export default function Navbar() {
               <a>API</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="mailto:tejaskamtam@yahoo.com">Contact</a>
             </li>
+            <a
+              className="btn"
+              href="https://drive.google.com/file/d/1kfh9ojHGh99wd-NOIzvYAtCu5yzZF7Sw/view?usp=sharing"
+            >
+              résumé
+            </a>
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">tejas kamtam</a>
@@ -57,12 +64,17 @@ export default function Navbar() {
           <li>
             <a>Experience</a>
           </li>
-          
+
           <li>
-            <a>Contact</a>
+            <a href="mailto:tejaskamtam@yahoo.com">Contact</a>
           </li>
         </ul>
-        <a className="btn">résumé</a>
+        <a
+          className="btn"
+          href="https://drive.google.com/file/d/1kfh9ojHGh99wd-NOIzvYAtCu5yzZF7Sw/view?usp=sharing"
+        >
+          résumé
+        </a>
       </div>
     </div>
   );
