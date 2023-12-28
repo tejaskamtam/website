@@ -10,9 +10,10 @@
   </head>
   <body class="">
     <header>
-      <nav></nav>
+      <!-- import navbar from components -->
+      <div hx-get="components/navbar.html" hx-swap="innerHTML" hx-trigger="load"></div>
     </header>
-    <main class="">
+    <main id="main-body">
       <section>
         <h1 class="text-3xl font-bold underline">Hello world!</h1>
         <button class="btn bg-primary" hx-get="styles/input.css" hx-swap="innerHTML">
