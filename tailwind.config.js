@@ -8,7 +8,8 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("daisyui")
+    require("daisyui"),
+    require('tailwind-scrollbar-hide')
   ],
   daisyui: {
     themes: ["light", "dark", "dracula", "dim"],

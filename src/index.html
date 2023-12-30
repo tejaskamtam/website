@@ -8,15 +8,22 @@
     <link href="public/favicon.ico" rel="icon" />
     <link href="styles/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="scrollbar-hide">
     <header class="fixed z-50 top-0">
       <!-- import navbar from components -->
-      <section
+      <!-- <section
         id="navbar"
         hx-get="components/navbar.html"
         hx-swap="innerHTML"
         hx-trigger="load"
-      ></section>
+      ></section> -->
+      <!-- import navbar2 from components : for test -->
+      <div class="h-[78px]"></div>
+      <section
+        id="navbar2"
+        hx-get="components/navbar2.html"
+        hx-swap="innerHTML"
+        hx-trigger="load"></section>
     </header>
     <main id="main-body">
       <section
