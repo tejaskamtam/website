@@ -8,45 +8,47 @@
     <link href="public/favicon.ico" rel="icon" />
     <link href="styles/output.css" rel="stylesheet" />
   </head>
-  <body class="scrollbar-hide">
-    <header class="fixed z-50 top-0">
-      <!-- import navbar from components -->
-      <!-- <section
-        id="navbar"
-        hx-get="components/navbar.html"
-        hx-swap="innerHTML"
-        hx-trigger="load"
-      ></section> -->
-      <!-- import navbar2 from components : for test -->
+  <body class="scrollbar-hide overflow-x-hidden">
+    <div class="container-lg lg:px-10 lg:mx-5">
+      <header>
+        <section
+          id="navbar"
+          hx-get="components/navbar.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </header>
+      <main id="main-body">
+        <section
+          id="hero"
+          hx-get="pages/hero.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+        <div id="about-div" class="h-[78px]"></div>
+        <section
+          id="about"
+          hx-get="pages/about.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+        <div id="projects-div" class="h-[78px]"></div>
+        <section
+          id="projects"
+          hx-get="pages/projects.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </main>
       <div class="h-[78px]"></div>
-      <section
-        id="navbar2"
-        hx-get="components/navbar2.html"
-        hx-swap="innerHTML"
-        hx-trigger="load"></section>
-    </header>
-    <main id="main-body">
-      <section
-        id="hero"
-        hx-get="pages/hero.html"
-        hx-swap="innerHTML"
-        hx-trigger="load"
-      ></section>
-      <div id="projects-div" class="h-[78px]"></div>
-      <section
-        id="projects"
-        hx-get="pages/projects.html"
-        hx-swap="innerHTML"
-        hx-trigger="load"
-      ></section>
-    </main>
-    <footer>
-      <section
-        hx-get="components/footer.html"
-        hx-swap="innerHTML"
-        hx-trigger="load"
-      ></section>
-    </footer>
+      <footer>
+        <section
+          hx-get="components/footer.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </footer>
+    </div>
     <script src="scripts/htmx.min.js"></script>
   </body>
 </html>
