@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dracula">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <link href="styles/output.css" rel="stylesheet" />
   </head>
   <body class="scrollbar-hide overflow-x-hidden">
-    <div class="container-lg lg:px-10 lg:mx-5">
+    <div class="container-lg lg:px-10 lg:mx-10">
       <header>
         <section
           id="navbar"
@@ -26,13 +26,14 @@
           hx-trigger="load"
         ></section>
         <div id="about-div" class="h-[78px]"></div>
-        <section
+        <!-- <section
           id="about"
           hx-get="pages/about.html"
           hx-swap="innerHTML"
           hx-trigger="load"
-        ></section>
+        ></section> 
         <div id="projects-div" class="h-[78px]"></div>
+        -->
         <section
           id="projects"
           hx-get="pages/projects.html"

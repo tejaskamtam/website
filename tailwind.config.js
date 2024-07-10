@@ -12,7 +12,7 @@ module.exports = {
     require('tailwind-scrollbar-hide')
   ],
   daisyui: {
-    themes: ["dracula", "cupcake"],
+    themes: ["garden", "dark"],
   },
 }
 

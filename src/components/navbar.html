@@ -5,7 +5,7 @@
       <div
         tabindex="0"
         role="button"
-        class="btn btn-ghost px-2 lg:hidden swap swap-rotate"
+        class="btn btn-ghost px-2 md:hidden swap swap-rotate"
       >
         <svg
           class="swap-off fill-current"
@@ -43,10 +43,11 @@
             projects
           </a>
         </li>
-        <div class="divider my-2"></div> 
+        <div class="divider my-2"></div>
+        <!-- CTA on dropdown -->
         <li>
           <a
-            class="btn bg-secondary w-fit h-fit place-content-center"
+            class="btn btn-primary w-fit h-fit place-content-center"
             href="https://drive.google.com/file/d/1kfh9ojHGh99wd-NOIzvYAtCu5yzZF7Sw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +79,7 @@
     >
   </div>
   <!-- Navbar on Desktop -->
-  <div class="navbar-end hidden lg:flex">
+  <div class="navbar-end hidden md:flex">
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
         <li>
@@ -101,10 +102,10 @@
       </ul>
     </div>
   </div>
-  <!-- CTA Button on Both -->
-  <div class="tooltip tooltip-bottom lg:flex mr-2 hidden" data-tip="G Drive">
+  <!-- CTA Button on Navbar -->
+  <div class="tooltip tooltip-bottom md:flex mr-2 hidden" data-tip="PDF">
     <a
-      class="btn bg-secondary w-auto"
+      class="btn btn-primary w-auto mr-4"
       href="https://drive.google.com/file/d/1kfh9ojHGh99wd-NOIzvYAtCu5yzZF7Sw/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
@@ -125,13 +126,13 @@
       </svg>
     </a>
   </div>
-  <label class="swap swap-rotate px-4 mx-2">
+  <label class="swap swap-rotate px-2">
     <!-- this hidden checkbox controls the state -->
-    <input type="checkbox" class="theme-controller" value="cupcake" />
+    <input type="checkbox" class="theme-controller" value="garden" />
 
     <!-- sun icon -->
     <svg
-      class="swap-on fill-current w-8 h-8"
+      class="swap-off fill-current w-8 h-8"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -142,7 +143,7 @@
 
     <!-- moon icon -->
     <svg
-      class="swap-off fill-current w-8 h-8"
+      class="swap-on fill-current w-8 h-8"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
