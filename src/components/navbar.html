@@ -43,11 +43,20 @@
             projects
           </a>
         </li>
+        <li>
+          <a
+            hx-get="pages/experience.html"
+            hx-target="#experience"
+            hx-swap="innerHTML show:#experience:top"
+          >
+            experience
+          </a>
+        </li>
         <div class="divider my-2"></div>
         <!-- CTA on dropdown -->
         <li>
           <a
-            class="btn btn-primary w-fit h-fit place-content-center"
+            class="btn btn-primary w-fit h-fit place-content-center "
             href="https://drive.google.com/file/d/1kfh9ojHGh99wd-NOIzvYAtCu5yzZF7Sw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,7 +80,7 @@
       </ul>
     </div>
     <a
-      class="btn btn-ghost text-xl"
+      class="btn btn-ghost text-xl hover:bg-transparent focus:bg-transparent"
       hx-get="pages/hero.html"
       hx-target="#hero"
       hx-swap="innerHTML show:window:top"
@@ -79,7 +88,7 @@
     >
   </div>
   <!-- Navbar on Desktop -->
-  <div class="navbar-end hidden md:flex">
+  <div class="navbar-end hidden md:flex mr-2">
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1">
         <li>
@@ -87,8 +96,8 @@
             hx-get="pages/about.html"
             hx-target="#about"
             hx-swap="innerHTML show:#about:top"
-          >
-            about
+            class="btn-ghost hover:bg-transparent focus:bg-transparent"
+          >about
           </a>
         </li>
         <li>
@@ -96,7 +105,17 @@
             hx-get="pages/projects.html"
             hx-target="#projects"
             hx-swap="innerHTML show:#projects:top"
+            class="btn-ghost hover:bg-transparent focus:bg-transparent"
             >projects</a
+          >
+        </li>
+        <li>
+          <a
+            hx-get="pages/experience.html"
+            hx-target="#experience"
+            hx-swap="innerHTML show:#experience:top"
+            class="btn-ghost hover:bg-transparent focus:bg-transparent"
+            >experience</a
           >
         </li>
       </ul>
