@@ -53,8 +53,11 @@
           </a>
         </li>
         <li>
+          <!-- TODO: change to mailto until SSR setup -->
           <a
-          href="mailto:tejaskamtam@yahoo.com"
+            hx-get="pages/contact.html"
+            hx-target="#contact"
+            hx-swap="innerHTML show:#contact:top"
           >
             contact
           </a>
@@ -127,9 +130,12 @@
           >
         </li>
         <li>
+          <!-- TODO: change to mailto until SSR setup -->
           <a
             class="btn-ghost hover:bg-transparent focus:bg-transparent"
-            href="mailto:tejaskamtam@yahoo.com"
+            hx-get="pages/contact.html"
+            hx-target="#contact"
+            hx-swap="innerHTML show:#contact:top"
             >contact</a
           >
         </li>
