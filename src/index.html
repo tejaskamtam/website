@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejas Kamtam</title>
+    <link href="public/favicon.ico" rel="shortcut icon" />
+    <link href="public/favicon.ico" rel="icon" />
+    <link href="styles/output.css" rel="stylesheet" />
+  </head>
+  <body class="scrollbar-hide overflow-x-hidden">
+    <div class="container-lg lg:px-10 lg:mx-10">
+      <header>
+        <section
+          id="navbar"
+          hx-get="components/navbar.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </header>
+      <main id="main-body">
+        <section
+          id="hero"
+          hx-get="pages/hero.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+        <div id="about-div" class="h-[78px]"></div>
+        <!-- <section
+          id="about"
+          hx-get="pages/about.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section> 
+        <div id="projects-div" class="h-[78px]"></div>
+        -->
+        <section
+          id="projects"
+          hx-get="pages/projects.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+        <div id="projects-div" class="h-[78px]"></div>
+        <section
+          id="experience"
+          hx-get="pages/experience.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"></section>
+        <div id="contact-div" class="h-[78px]"></div>
+        <!-- TODO: remove contact until SSR setup - instead mail:to in navbar -->
+        <section
+          id="contact"
+          hx-get="pages/contact.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </main>
+      <div class="h-[78px]"></div>
+      <footer>
+        <section
+          hx-get="components/footer.html"
+          hx-swap="innerHTML"
+          hx-trigger="load"
+        ></section>
+      </footer>
+    </div>
+    <script src="scripts/htmx.min.js"></script>
+  </body>
+</html>
