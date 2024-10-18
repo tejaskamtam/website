@@ -3,11 +3,18 @@
   <div class="h-[40px]"></div>
   <!-- Contact form using daisy ui with email, subject, and content -->
   <div class="center lg:px-60">
-    <form class="form-control max-w-screen sm:w-full">
+    <!-- Show alert on submit -->
+    <form
+      class="form-control max-w-screen sm:w-full"
+      name="contact"
+      hx-on:submit="alert('Your message has been sent!')"
+      netlify
+    >
       <input
         type="email"
         placeholder="Your Email"
         class="input input-bordered input-primary"
+        name="email"
       />
       <div class="h-[20px]"></div>
 
@@ -15,15 +22,19 @@
         type="text"
         placeholder="Subject Line"
         class="input input-bordered input-primary"
+        name="subject"
       />
       <div class="h-[20px]"></div>
 
       <textarea
         placeholder="😁 Enter content here, just as you would an email! ✉️"
         class="textarea textarea-bordered textarea-primary"
+        name="content"
       ></textarea>
       <div class="h-[50px]"></div>
-      <button class="btn btn-primary">Submit</button>
+      <button id="contact-submit" class="btn btn-primary" type="submit">
+        Submit
+      </button>
     </form>
   </div>
 </div>
