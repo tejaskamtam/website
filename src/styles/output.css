@@ -4000,11 +4000,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .lg\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -4020,11 +4015,6 @@ html {
 
   .lg\:justify-items-start {
     justify-items: start;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:px-60 {
